@@ -87,6 +87,7 @@ macro_rules! into {
 
 #[doc(hidden)]
 pub mod __private {
+    #[cfg(feature = "error")]
     pub use anyhow;
     pub use scopeguard;
     pub use unicode_width;
